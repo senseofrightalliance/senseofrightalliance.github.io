@@ -1,1 +1,1 @@
-var entryAmount = 5;
+var entryAmount = 6;
