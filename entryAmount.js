@@ -1,0 +1,1 @@
+var entryAmount = 5;

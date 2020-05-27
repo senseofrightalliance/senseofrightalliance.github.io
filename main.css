@@ -1,0 +1,119 @@
+html {
+    background-color: #262626;
+    color: #dddddd;
+    font-family: consolas;
+}
+
+body {
+    margin: 0 0 0 0;
+}
+
+a {
+    color: #dddddd;
+    text-decoration: none;
+}
+
+#barOuter {
+    background-color: #303030;
+    box-shadow: 0px 6px 6px 0px black;
+    width: 100%;
+    height: 50px;
+}
+
+#bar {
+    max-width: 1000px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.bar-a {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.bar-div {
+    float: left;
+    padding: 0 10px 0 10px;
+}
+
+#search {
+    width: 200px;
+    float: right;
+    position: relative;
+    top: 12.5px;
+}
+
+#searchBar {
+    width: 150px;
+    color: #dddddd;
+    background-color: #1e1e1e;
+    border: #404040 inset;
+}
+
+#searchImage {
+    position: relative;
+    top: 4px;
+    margin: 0 8px 0 0;
+}
+
+#bannerOuter {
+    width: 100%;
+    height: 100px;
+}
+
+#banner {
+    max-width: 1000px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+#contentOuter {
+    width: 100%;
+}
+
+#content {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    top: 20px;
+}
+
+#sideBar {
+    width: 150px;
+    height: 1000px;
+    background-color: #303030;
+    box-shadow: 0px 6px 6px 0px black;
+    margin: 10px 10px 10px 0;
+    position: absolute;
+}
+
+.content-box {
+    background-color: #303030;
+    box-shadow: 0px 6px 6px 0px black;
+    padding: 5px;
+}
+
+#briefing {
+    width: 300px;
+    margin: 0 0 0 250px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #444444; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #777777;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #666666; 
+}

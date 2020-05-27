@@ -1,0 +1,17 @@
+#thumbs {
+    
+}
+
+.thumb {
+    display: inline-block;
+    word-wrap: break-word;
+    margin: 5px;
+    max-height: 300px;
+    max-width: 300px;
+    padding: 5px;
+}
+
+img {
+    max-height: 300px;
+    max-width: 300px;
+}
