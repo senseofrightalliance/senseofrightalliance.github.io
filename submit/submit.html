@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sense Of Right Alliance</title>
+        <link rel="stylesheet" href="../main.css">
+    </head>
+    <body>
+        <div id="bannerOuter">
+            <div id="banner">
+                <div id="logo"><h1>logo here</h1></div>
+            </div>
+        </div>
+        <div id="barOuter">
+            <div id="bar">
+                <div class="bar-div">
+                    <a href="../index.html" class="bar-a">home</a>
+                </div>
+                <div class="bar-div">
+                    <a href="../entries/entry.html?page=0" class="bar-a">entires</a>
+                </div>
+                <div class="bar-div">
+                    <a href="" class="bar-a">about</a>
+                </div>
+                <div id="search">
+                    <img src="../assets/images/search.png" id="searchImage"><input type="text" id="searchBar">
+                </div>
+            </div>
+        </div>
+        <div id="contentOuter"> 
+            <div id="content">
+                <p></p>
+                <span>name: </span><input id="name" type="text"><br>
+                <span>relation: </span><select id="relation"><option value="member">member</option>
+                    <option value="neutral">neutral</option>
+                    <option value="aggressive">aggressive</option>
+                    <option value="unknown">unknown</option>
+                </select><br>
+                <span>description: </span><input id="description" type="text" style="width: 300px;"><br>
+                <span>image link: </span><input id="link" type="text"><br>
+                <span>extra notes: </span><input id="notes" type="text"><br>
+                <button id="sub" onclick="submit()">submit</button>
+            </div>
+        </div>
+        <script src="jquery.js"></script>
+        <script>
+            function submit() {
+                document.getElementById("sub").parentElement.removeChild(document.getElementById("sub"));
+                var msg = "";
+                msg+="name="+document.getElementById("name").value;
+                msg+="&relation="+document.getElementById("relation").value;
+                msg+="&description="+document.getElementById("description").value;
+                msg+="&imageLink="+document.getElementById("link").value;
+                msg+="&extraNotes="+document.getElementById("notes").value;
+
+                var jqxhr = $.ajax({
+                    url: "https://script.google.com/macros/s/AKfycbzY43zB4s07q3tHQrFIAt0UoFBhE78gmbsB5B82GopQkM27c4_l/exec",
+                    method: "GET",
+                    dataType: "json",
+                    data: msg
+                })
+
+            }
+        </script>
+    </body>
+</html>
